@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap')
+
+$red: #ea2845
+$white: rgba(255, 255, 255)
+$gray: #f1f3f3
+:root
+    --red: #{$red}
+    --white: #{$white}
+    --gray: #{$gray}
+    
+
+*
+    margin:0
+    box-sizing: border-box
+
+body
+    font-family: 'Montserrat', sans-serif
+
+header
+    // background-image: url('../img/header-1.png')
+    background: url('../img/header-1.png') fixed no-repeat 50% 50%
+    background-size: cover
+    width: 100%
+    height: 100vh
+h1, h2, h3, h4, h5, p
+    font-family: 'Montserrat', sans-serif
+a
+    text-decoration: none
+    font-family: 'Montserrat', sans-serif
+
+.navBar
+    display: flex
+    justify-content: space-around
+    align-items: center
+    padding-top: 30px
+    a
+        &:hover
+            color: var(--red)
+
+    .bottomNav
+    position: fixed
+    padding-top:5px
+    width:100%
+    top: 0px
+    left: 0
+    background: var(--white)
+    box-shadow:0px 2px 2px #ccc
+    
+    z-index:9
+.bottomNav .nav > a
+    color: #000
+
+.bottomNav .logo .logoNav
+    width: 50px
+
+.nav 
+    width: 800px
+    display: flex
+    justify-content: space-around
+.nav > a
+    font-size:16px
+    font-weight: 700
+    font-family: 'Montserrat', sans-serif
+    color: var(--white)
+    text-decoration: none
+.iconNav
+    font-size: 23px
+h1
+    color: blue
+
+.logoNav
+    width:70px
+    height:67.61px 
+
+.textHeader
+    width: 50%
+    height: 40%
+    padding-left: 9%
+    color: var(--white)
+    margin: 0px 15px
+    margin-top: 10%
+
+.textHeader h1
+    line-height: 75px
+    font-weight: 600
+    font-size: 55px
+    color: inherit
+
+.textHeader h4
+    font-weight: 500
+    font-size: 18px
+    max-width: 600px
+    line-height: 32px
+
+.linksHeader
+    margin-top: 40px
+
+.btn
+    padding: 14px 28px
+    max-width: 230px
+    font-size: 16px
+    font-weight: 500
+    border-radius: 30px
+    text-align: center
+
+.btn-Documentation
+    background: var(--red)  
+    color: var(--white)
+    margin-right: 20px
+    width: 230px
+    height: 55px
+
+.btn-SourceCode
+    border:2px solid var(--white)
+    color: var(--white)
+    width: 230px
+    height: 55px
+.btn-SourceCode i
+    font-size: 16px
+
+// Cards
+.icon
+    width:70px
+
+.cards
+    background: var(--gray)
+    display: flex
+    justify-content: space-around
+    padding:100px 0px
+
+.card
+    width: 300px
+    text-align: center
+.card p
+    margin: 10px 0px
+    font-size: 16px
+    font-weight: 500
+
+.icon-card
+    margin: 20px
+
+.title-card
+    color: var(--red)
+    font-weight: bold
+    font-size: 18px
+    margin: 20px
+
+.seccion-2
+    background-image: url('../img/slide-2.png') 
+    background-position: 0 100%
+    background-color: #ed1543
+    background-repeat: no-repeat
+    height: 500px
+    overflow: hidden
+.textSeccion-2
+    color: var(--white)
+    width: 70%
+    padding: 70px
+    margin-left: 40%
+.textSeccion-2 h2
+    font-size: 32px
+    margin: 0px 0px 26.56px
+.textSeccion-2 p
+    margin:17px 0px
+    font-size: 17.5px
+    font-weight: 500
+    width:658px
+    height: 26px
+    line-height: 32px
+    margin-bottom:119px
+.textSeccion-2 a
+    min-width: 200px
+    margin-top: 29px
+    font-weight: 600
+    background: #fff
+    border-color: #fff
+    color: #ed1543
+    text-align: center
+    padding: 14px 28px
+    border: 2px solid #fff
+    font-size: 16px
+    -webkit-border-radius: 30px
+
+
+.seccion-3
+    background: #111
+    text-align: center
+    color: var(--white)
+    padding-top: 10%
+    padding-bottom: 10%
+
+.seccion-3 h4
+    color: inherit
+    font-size: 36px
+.seccion-3 p
+    font-size: 16px
+    max-width: 400px
+    margin:20px auto
+.editCode
+    width:70%
+    margin:0% auto
+    margin-top:9%
+
+.seccion-4
+    background: #0A0A0A
+    text-align: center
+    color: var(--white)
+    padding-top: 10%
+    padding-bottom: 10%
+.seccion-4 h4
+    color: inherit
+    font-size: 36px
+.seccion-4 p
+    font-size: 16px
+    max-width: 400px
+    margin:20px auto
+.seccion-5
+    background: #FDFDFD
+    text-align: center
+    padding-top: 10%
+    padding-bottom: 10%
+.seccion-5 h2
+    color: var(--red)
+    font-size: 36px
+.seccion-5 p
+    font-size: 16px
+    max-width: 900px
+    margin:20px auto
+// Contacto
+.contact
+    position: relative
+    background: #e8e8e8
+    overflow: hidden
+    display: flex
+    justify-content: space-between
+    padding: 4%
+.info
+    width: 470px
+.info h3
+    color: #111111
+.info p 
+    margin-top:10px
+    color: #7B7B7B
+    font-size: 14px
+    
+.contact-input
+    width:500px    
+.inputC
+    border: 0
+    outline: none
+    font-size: 13px
+    height: 40px
+    padding: 10px 20px
+    background: #fdfdfd
+    width: calc(100% - 70px)
+    box-shadow: -2px 2px 3px #dcdcdc
+    border-radius: 3px
+    max-width: 100%
+    vertical-align: middle
+.btnContact
+    background: #ed1543
+    padding: 13px 18px
+    border: 0
+    color: #fff
+    margin-left: -45px
+    font-size: 14px
+    vertical-align: middle
+    border-top-right-radius: 3px
+    border-bottom-right-radius: 3px
+    transition: all .2s ease-in-out
+.footer
+    font-size: 14px
+    font-weight: 500
+    line-height: 26px
+    background: #F1F3F3
+    color: #a5a5a5
+    padding:2% 3%
+.socialReds
+    width: 180px
+    display: flex
+    justify-content: space-around
+    margin: 0px auto
+    margin-bottom:8px
+.iconFooter
+    font-size: 24px
+    color: #a5a5a5
+    
+    &:hover
+        color: var(--red)
+.textFooter > a
+    color: var(--red)
+.textFooter
+    font-weight: 500
+    text-align: center
+.btnSponsor
+    background: var(--red)  
+    color: var(--white)
+    width: 230px
+    height: 55px
